@@ -84,7 +84,7 @@ model.compile(loss='categorical_crossentropy', optimizer='ADAM', metrics=['accur
 
 print(model.summary())
 
-history = model.fit(X, y_true, epochs=100, verbose=1, validation_split=0.3, batch_size=512)
+history = model.fit(X, y_true, epochs=100, verbose=1, validation_split=0.2, batch_size=512)
 
 loss, accuracy, f1_score, precision, recall = model.evaluate(X, y_true, verbose=0)
 print("N: ", N)
